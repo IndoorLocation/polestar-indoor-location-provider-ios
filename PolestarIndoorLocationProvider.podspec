@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PolestarIndoorLocationProvider"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.license      = { :type => 'MIT' }
   s.summary      = "Allows to use polestar to provide indoorlocation"
   s.homepage     = "https://github.com/IndoorLocation/polestar-indoor-location-provider-ios"
