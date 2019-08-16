@@ -64,6 +64,7 @@
 
 - (void)didLocationChange:(CLLocation *)location {
     ILIndoorLocation* indoorLocation = [[ILIndoorLocation alloc] initWithProvider:self latitude:location.coordinate.latitude longitude:location.coordinate.longitude floor:[NSNumber numberWithDouble:location.altitude/5]];
+    indoorLocation.accuracy = location.horizontalAccuracy;
     if (_floorByAltitude) {
         NSNumber* floor = _floorByAltitude[[NSNumber numberWithDouble:location.altitude]];
         if (floor) {
