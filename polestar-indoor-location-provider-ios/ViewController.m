@@ -1,26 +1,20 @@
 #import "ViewController.h"
-#import <MapwizeUI/MapwizeUI.h>
 
-@interface ViewController () <MWZMapwizeViewDelegate>
+@interface ViewController () <MWZUIViewDelegate>
 
-@property (nonatomic, retain) MWZMapwizeView* mapwizeView;
+@property (nonatomic) MWZUIView* mapwizeView;
+@property (nonatomic) ILPolestarIndoorLocationProvider* provider;
 
 @end
 
-@implementation ViewController {
-    ILPolestarIndoorLocationProvider* provider;
-}
+@implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initMapwize];
-}
-
-- (void) initMapwize {
     MWZUIOptions* opts = [[MWZUIOptions alloc] init];
-    MWZMapwizeViewUISettings* settings = [[MWZMapwizeViewUISettings alloc] init];
+    MWZUISettings* settings = [[MWZUISettings alloc] init];
     
-    self.mapwizeView = [[MWZMapwizeView alloc] initWithFrame:self.view.frame
+    self.mapwizeView = [[MWZUIView alloc] initWithFrame:self.view.frame
                                               mapwizeOptions:opts
                                                   uiSettings:settings];
     self.mapwizeView.delegate = self;
@@ -56,33 +50,17 @@
                                    constant:0.0f] setActive:YES];
 }
 
-- (void)mapwizeView:(MWZMapwizeView *)mapwizeView didTapOnPlaceInformationButton:(MWZPlace *)place {
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
     
-}
-
-- (void)mapwizeView:(MWZMapwizeView *)mapwizeView didTapOnPlaceListInformationButton:(MWZPlaceList *)placeList {
-    
-}
-
-- (void)mapwizeViewDidTapOnFollowWithoutLocation:(MWZMapwizeView *)mapwizeView {
-    
-}
-
-- (void)mapwizeViewDidTapOnMenu:(MWZMapwizeView *)mapwizeView {
-    
-}
-
-- (void) mapwizeViewDidLoad:(MWZMapwizeView*) mapwizeView {
-    provider = [[ILPolestarIndoorLocationProvider alloc] initWithPolestarKey:@"emulator"];
-    [provider start];
-    [mapwizeView.mapwizePlugin setIndoorLocationProvider:provider];
-}
-
-- (BOOL) mapwizeView:(MWZMapwizeView *)mapwizeView shouldShowInformationButtonFor:(id<MWZObject>)mapwizeObject {
-    if ([mapwizeObject isKindOfClass:MWZPlace.class]) {
-        return YES;
-    }
-    return NO;
+- (void)mapwizeViewDidLoad:(MWZUIView * _Nonnull)mapwizeView {
+    self.mapwizeView = mapwizeView;
+    self.provider = [[ILPolestarIndoorLocationProvider alloc] initWithPolestarKey:@"emulator"];
+    [self.provider start];
+    [self.mapwizeView setIndoorLocationProvider:self.provider];
 }
 
 @end
