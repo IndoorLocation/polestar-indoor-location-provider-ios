@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/IndoorLocation/polestar-indoor-location-provider-ios", :tag => "#{s.version}" }
   s.source_files  = "polestar-indoor-location-provider-ios/IndoorLocationProvider/*.{h,m}"
   s.dependency "IndoorLocation", "~> 1.0"
+  s.dependency "NAOSDK", "~> 4.0"
 end

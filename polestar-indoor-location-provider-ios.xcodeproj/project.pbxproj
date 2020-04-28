@@ -15,7 +15,6 @@
 		8F623C0A20356CB2008D28F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F623C0820356CB2008D28F8 /* LaunchScreen.storyboard */; };
 		8F623C0D20356CB2008D28F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F623C0C20356CB2008D28F8 /* main.m */; };
 		8F623C1620356D8A008D28F8 /* ILPolestarIndoorLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F623C1520356D8A008D28F8 /* ILPolestarIndoorLocationProvider.m */; };
-		8F623C322035703B008D28F8 /* libNAOSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F623C312035703B008D28F8 /* libNAOSDK.a */; };
 		8F623C342035706B008D28F8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F623C332035706B008D28F8 /* libz.tbd */; };
 		8F623C3620357076008D28F8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F623C3520357076008D28F8 /* libc++.tbd */; };
 		8F623C3820357080008D28F8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F623C3720357080008D28F8 /* SystemConfiguration.framework */; };
@@ -39,32 +38,6 @@
 		8F623C0C20356CB2008D28F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8F623C1420356D8A008D28F8 /* ILPolestarIndoorLocationProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILPolestarIndoorLocationProvider.h; sourceTree = "<group>"; };
 		8F623C1520356D8A008D28F8 /* ILPolestarIndoorLocationProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILPolestarIndoorLocationProvider.m; sourceTree = "<group>"; };
-		8F623C1820357019008D28F8 /* NaoContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NaoContext.h; sourceTree = "<group>"; };
-		8F623C1920357019008D28F8 /* NAOAnalyticsHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOAnalyticsHandle.h; sourceTree = "<group>"; };
-		8F623C1A20357019008D28F8 /* DBTPOWERMODE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBTPOWERMODE.h; sourceTree = "<group>"; };
-		8F623C1B20357019008D28F8 /* NAOSensorsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOSensorsDelegate.h; sourceTree = "<group>"; };
-		8F623C1C20357019008D28F8 /* NAOServiceHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOServiceHandle.h; sourceTree = "<group>"; };
-		8F623C1D2035701A008D28F8 /* NAOAnalyticsHandleDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOAnalyticsHandleDelegate.h; sourceTree = "<group>"; };
-		8F623C1E2035701A008D28F8 /* NAOLocationHandleDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOLocationHandleDelegate.h; sourceTree = "<group>"; };
-		8F623C1F2035701A008D28F8 /* NAOBeaconReportingHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOBeaconReportingHandle.h; sourceTree = "<group>"; };
-		8F623C202035701A008D28F8 /* NAOSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOSDK.h; sourceTree = "<group>"; };
-		8F623C212035701A008D28F8 /* DBTBEACONSTATE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBTBEACONSTATE.h; sourceTree = "<group>"; };
-		8F623C222035701A008D28F8 /* NAOGeofencingHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOGeofencingHandle.h; sourceTree = "<group>"; };
-		8F623C232035701A008D28F8 /* NAOLocationHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOLocationHandle.h; sourceTree = "<group>"; };
-		8F623C242035701A008D28F8 /* NAOBeaconProximityHandleDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOBeaconProximityHandleDelegate.h; sourceTree = "<group>"; };
-		8F623C252035701A008D28F8 /* NAOGeofenceData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOGeofenceData.h; sourceTree = "<group>"; };
-		8F623C262035701A008D28F8 /* DBTNAOFIXSTATUS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBTNAOFIXSTATUS.h; sourceTree = "<group>"; };
-		8F623C272035701A008D28F8 /* NAOGeofencingHandleDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOGeofencingHandleDelegate.h; sourceTree = "<group>"; };
-		8F623C282035701A008D28F8 /* NAOGeofenceHandleDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOGeofenceHandleDelegate.h; sourceTree = "<group>"; };
-		8F623C292035701B008D28F8 /* NAOServicesConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOServicesConfig.h; sourceTree = "<group>"; };
-		8F623C2A2035701B008D28F8 /* NAOSyncDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOSyncDelegate.h; sourceTree = "<group>"; };
-		8F623C2B2035701B008D28F8 /* NaoAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NaoAlert.h; sourceTree = "<group>"; };
-		8F623C2C2035701B008D28F8 /* DBTALERTRULE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBTALERTRULE.h; sourceTree = "<group>"; };
-		8F623C2D2035701B008D28F8 /* NAOBeaconReportingHandleDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOBeaconReportingHandleDelegate.h; sourceTree = "<group>"; };
-		8F623C2E2035701B008D28F8 /* DBNAOAlertRule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBNAOAlertRule.h; sourceTree = "<group>"; };
-		8F623C2F2035701B008D28F8 /* NAOBeaconProximityHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAOBeaconProximityHandle.h; sourceTree = "<group>"; };
-		8F623C302035701B008D28F8 /* DBNAOERRORCODE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBNAOERRORCODE.h; sourceTree = "<group>"; };
-		8F623C312035703B008D28F8 /* libNAOSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNAOSDK.a; sourceTree = "<group>"; };
 		8F623C332035706B008D28F8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		8F623C3520357076008D28F8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		8F623C3720357080008D28F8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -88,7 +61,6 @@
 				8F623C3620357076008D28F8 /* libc++.tbd in Frameworks */,
 				8F623C342035706B008D28F8 /* libz.tbd in Frameworks */,
 				793E756BC78B00D7D293E100 /* Pods_polestar_indoor_location_provider_ios.framework in Frameworks */,
-				8F623C322035703B008D28F8 /* libNAOSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,32 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				8F623C3F2035814A008D28F8 /* nao.kml */,
-				8F623C312035703B008D28F8 /* libNAOSDK.a */,
-				8F623C2E2035701B008D28F8 /* DBNAOAlertRule.h */,
-				8F623C302035701B008D28F8 /* DBNAOERRORCODE.h */,
-				8F623C2C2035701B008D28F8 /* DBTALERTRULE.h */,
-				8F623C212035701A008D28F8 /* DBTBEACONSTATE.h */,
-				8F623C262035701A008D28F8 /* DBTNAOFIXSTATUS.h */,
-				8F623C1A20357019008D28F8 /* DBTPOWERMODE.h */,
-				8F623C2B2035701B008D28F8 /* NaoAlert.h */,
-				8F623C1920357019008D28F8 /* NAOAnalyticsHandle.h */,
-				8F623C1D2035701A008D28F8 /* NAOAnalyticsHandleDelegate.h */,
-				8F623C2F2035701B008D28F8 /* NAOBeaconProximityHandle.h */,
-				8F623C242035701A008D28F8 /* NAOBeaconProximityHandleDelegate.h */,
-				8F623C1F2035701A008D28F8 /* NAOBeaconReportingHandle.h */,
-				8F623C2D2035701B008D28F8 /* NAOBeaconReportingHandleDelegate.h */,
-				8F623C1820357019008D28F8 /* NaoContext.h */,
-				8F623C252035701A008D28F8 /* NAOGeofenceData.h */,
-				8F623C282035701A008D28F8 /* NAOGeofenceHandleDelegate.h */,
-				8F623C222035701A008D28F8 /* NAOGeofencingHandle.h */,
-				8F623C272035701A008D28F8 /* NAOGeofencingHandleDelegate.h */,
-				8F623C232035701A008D28F8 /* NAOLocationHandle.h */,
-				8F623C1E2035701A008D28F8 /* NAOLocationHandleDelegate.h */,
-				8F623C202035701A008D28F8 /* NAOSDK.h */,
-				8F623C1B20357019008D28F8 /* NAOSensorsDelegate.h */,
-				8F623C1C20357019008D28F8 /* NAOServiceHandle.h */,
-				8F623C292035701B008D28F8 /* NAOServicesConfig.h */,
-				8F623C2A2035701B008D28F8 /* NAOSyncDelegate.h */,
 			);
 			path = NAOSdk;
 			sourceTree = "<group>";
@@ -471,6 +417,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GGHGAE294R;
 				INFOPLIST_FILE = "polestar-indoor-location-provider-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -490,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GGHGAE294R;
 				INFOPLIST_FILE = "polestar-indoor-location-provider-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

@@ -6,6 +6,7 @@ target 'polestar-indoor-location-provider-ios' do
   use_frameworks!
   pod 'IndoorLocation'
   pod 'MapwizeUI'
+  pod 'NAOSDK'
   # Pods for polestar-indoor-location-provider-ios
 
 end
